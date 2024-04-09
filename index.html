@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Shape.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+
+  <body> 
     <nav id="desktop-nav">
-        <div class="logo">John doe</div>
+        <div class="logo">Lanre</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -19,8 +22,9 @@
             </ul>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
-        <div class="logo">John doe</div>
+        <div class="logo">Lanre</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -35,44 +39,76 @@
             </div>
         </div>
     </nav>
+
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="John Doe Profile picture" >
-        </div>
+      <div class="profile-container">
+        <img src="./assets/abdulbasit.jpeg" alt="Lanre Profile picture" >
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">John Doe</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick="window.open('./assets/resume-example.pdf')">Download CV
-                </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'">Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="My linkedin profile"
-                class="icon" 
-                onclick="location.href='https://linkedin.com/'" 
-                />
-                <img src="./assets/github.png" 
-                alt="My github profile"
-                class="icon" 
-                onclick="location.href='https://github.com/'" 
-                />
-            </div>
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title"> Lanre </h1>
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container">
+              <button 
+                  class="btn btn-color-2" 
+                  onclick="window.open('./assets/resume-example.pdf')">Download CV
+              </button>
+              <button 
+                  class="btn btn-color-1" 
+                  onclick="location.href='./#contact'">Contact Info
+              </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://github.com/codebylanre" class="fab fa-github"></a>
+            <a href="https://www.instagram.com/iamabdulbasit_" class="fab fa-instagram"></a>
+          </div>
         </div>
+      </div>
+      <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
     </section>
+
+
+    <!-- <section class="home flex-center" id="profile">
+      <div class="profile-container">
+        <div class="profile-img">
+          <img src="./assets/abdulbasit.jpeg" alt="">
+        </div>
+        <div class="info">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title"> Lanre </h1>
+          <p class="section__text__p2">Frontend Developer</p>
+        </div>
+        <div class="socials-container">
+          <img src="./assets/linkedin.png" 
+          alt="My linkedin profile"
+          class="icon" 
+          onclick="location.href='https://linkedin.com/'" 
+          />
+          <img src="./assets/github.png" 
+          alt="My github profile"
+          class="icon" 
+          onclick="location.href='https://github.com/'" 
+          />
+        </div>
+        <div class="btn-container">
+          <button 
+          class="btn btn-color-2" 
+          onclick="window.open('./assets/resume-example.pdf')">Download CV
+          </button>
+          <button 
+          class="btn btn-color-1" 
+          onclick="location.href='./#contact'">Contact Info
+          </button>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+    </section>  -->
+
     <section id="about">
         <p class="section__text__p1">Get To Know more</p>
         <h1 class="title"> About me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" 
+                <img src="./assets/abdulbasit2.JPG" 
                 alt="Profile picture" 
                 class="about-pic"
                 />
@@ -104,6 +140,7 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
         onclick="location.href='./#experience' "/>
     </section>
+
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
@@ -238,6 +275,7 @@
           onclick="location.href='./#projects'"
         />
     </section>
+
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">projects</h1>
@@ -300,6 +338,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -314,6 +353,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -327,6 +367,8 @@
         </nav>
         <p>Copyright &#169; 2024 Abdulbasit. All Rights Reserved.</p>
     </footer>
+    
     <script src="script.js"></script>
-</body>
+  </body>
+
 </html>
